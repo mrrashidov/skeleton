@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+
+    .scrollable::-webkit-scrollbar {
+        @apply w-7px h-7px md:cursor-pointer transition duration-1000 ease-in-out;
+    }
+
+    .scrollable::-webkit-scrollbar-track {
+        @apply md:bg-transparent md:cursor-pointer
+    }
+
+    .scrollable:hover::-webkit-scrollbar-track{
+        @apply md:bg-gray-300
+    }
+
+    .scrollable::-webkit-scrollbar-thumb {
+        @apply md:bg-transparent md:cursor-pointer
+    }
+    
+    .scrollable:hover::-webkit-scrollbar-thumb {
+        @apply bg-gray-500
+    }
+
+    .pretty-radio-input:checked + .pretty-radio-box div {
+        display: block !important;
+    }
+
+    .pretty-checkbox-input:checked + .pretty-checkbox-box {
+        @apply bg-blue-600
+    }
+
+    .pretty-checkbox-input:checked + .pretty-checkbox-box svg {
+        display: block !important;
+    }
+
+    .no-spinner-button::-webkit-inner-spin-button,
+    .no-spinner-button::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

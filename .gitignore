@@ -1,0 +1,12 @@
+.idea
+node_modules
+dist
+dist-ssr
+.github/workflows/format.yml
+.github/workflows/deploy.yml
+.github/workflows/test.yml
+.DS_Store
+*.local
+yarn.lock
+package-lock.json
+example
